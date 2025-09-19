@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_basics.css">
+    <title>HTML-CSS</title>
+</head>
+<body>
+<div>
+    <h2>In this file, we practice CSS</h2>
+    <h3>This is the HTML file we will format using CSS</h3>
+</div>
+<hr>
+    
+<div>
+    <h2>There are 3 ways we can add CSS to our HTML files</h2>
+    <ol>
+        <li><h4>Inline with the style HTML attribute</h4></li>
+        <li><h4>Internal with the &lg;style&gt; element</h4></li>
+        <li><h4>External.css file</h4></li>
+    </ol>
+<hr>
+<ol>
+    <li><h4>Inline using style HTML attribute: adding "style" attribute dirently in the HTML file next to other tags.</h4>
+        <div>
+            <pre>
+            &lg;body&gt;
+            &lg;h1 style="font-size: X px;"&gt; Heading 1
+            &lg;/h1&gt;
+
+            &lg;h1 style="color: blue; font size: X px"&gt; Heading 2
+            &lg;/h1&gt;
+            </pre>
+        </div>
+    </li>
+
+    <li><h4>Internal with the &lg;style&gt; element: Adding a seperate tag named 'style'</h4>
+        <div>
+            <pre>
+            &lg;style&gt;
+                h1
+                {
+                    background color: blue;
+                    border: X px;
+                    padding: Y px;
+                }
+            &lg;/style&gt;
+            </pre>
+        </div>
+    </li>
+
+    <li><h4>External.css file:(prefferred) Making a seperate CSS file and then linking it to the HTML file which it is formatting.</h4>
+        <h4>(I am using this way.)</h4>
+        <div>
+            <pre>
+            &lg;link rel="stylesheet" href="(Link to the CSS file)"&gt;
+            </pre>
+            </div>
+    </li>
+</ol>
+</div>
+<hr>
+<h3>Topics in this file:</h3>
+<div>
+<ol>
+    <li><h4>Class selectors</h4></li>
+    <li><h4>Some main ways to format an HTML file</h4></li>
+    <li><h4>Display types</h4></li>
+    <li><h4>Padding and Margins</h4></li>
+    <li><h4>Adding Custom web fonts</h4></li>
+    <li><h4>Animations in CSS</h4></li>
+    <li><h4>FlexBox</h4></li>
+    <li><h4>Grid</h4></li>
+</ol>
+</div>
+<hr>
+<div>
+    <ol>
+        <li><h4>Class selectors</h4></li>
+        <div>
+            <h5>For example: consider the following code:</h5>
+            <h5>HTML:</h5>
+            <pre>
+                
+                &lg;h1 class="blue uppercase" &gt; H1 &lg;/h1&gt;
+                &lg;div class="uppercase" &gt; DIV &lg;/h1&gt;
+                &lg;p class="blue" &gt; P &lg;/h1&gt;
+            </pre>
+            <h5>CSS:</h5>
+            <pre>
+                
+                .blue
+                {
+                    color: blue;
+                }
+                .uppercase
+                {
+                    text-transform: uppercase;
+                }
+            </pre>
+
+            <h4>Output</h4>
+            <div class="ClassSelectors">
+
+            <h1 class="blue uppercase">H1</h1>
+            <div class="uppercase">DIV</div>
+            <p class="blue">P</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <li><h4>Some main ways to format an HTML file</h4></li>
+        <div>
+            <ul>
+                <li>Font Sizes</li>
+                <li>Background colors</li>
+                <li>Border</li>
+                <li>Padding: the space between content and borders</li>
+                <li>Margins: the space between the borders between adjacent elements</li>
+                <li></li>
+            </ul>
+        </div>
+        
+
+
+        <li><h4>Display types: Inline, inline-block, block etc.</h4></li>
+        <h4>This helps control layouts of the page.</h4>
+        <div>
+            <h5>For example: consider the following code:</h5>
+            <h5>HTML:</h5>
+            <pre>
+                
+                &lg;div class="display1" &gt; This is inline &lg;/div&gt;
+                &lg;div class="display2" &gt; This is inline-block &lg;/div&gt;
+                &lg;div class="display3" &gt; This is block &lg;/div&gt;
+                
+            </pre>
+            <h5>CSS:</h5>
+            <pre>
+                .display1
+                    {
+                        display: inline;
+                    }
+
+                .display2
+                    {
+                        display: inline-block;
+                    }
+
+                .display3
+                    {
+                        display: block;
+                    }
+                
+               
+            </pre>
+
+            <h4>Output</h4>
+            <div class="display">
+                <pre>
+                <div class="display1">This is inline</div>
+                <div class="display2">This is inline-block: allows padding for each element</div>
+                <div class="display3">This is block:takes full width of the screen</div>
+                </pre>
+            </div>
+
+        </div>
+
+
+
+        <li><h4>Padding and Margins</h4></li>
+        <div>
+             <h5>For example: consider the following code:</h5>
+            <h5>HTML:</h5>
+            <pre>
+                
+               
+                &lg;div id="box" &gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sunt ullam atque, perspiciatis explicabo maiores consectetur praesentium tenetur impedit id obcaecati nesciunt quaerat temporibus excepturi ut! Dolor ex perferendis saepe. &lg;/div&gt;
+            </pre>
+            <h5>CSS:</h5>
+            <pre>
+                
+               #box
+                {
+                    border: 10px solid black;
+                    padding: 10px 10px 10px 10px;
+                    margin: 10px 10px 10px 10px;
+                    display: inline-block;
+                }
+            </pre>
+
+            <h4>Output</h4>
+            <div id="box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, maiores, corporis distinctio consequuntur error impedit nemo veniam sit placeat voluptas nam doloremque alias porro recusandae exercitationem consequatur tempore ipsum asperiores?
+            </div>
+
+
+
+
+        <li><h4>Adding Custom web fonts</h4></li>
+        <div>
+            <h5>Go to Fonts.google.com where you can find free fonts to use.</h5>
+        </div>
+
+
+
+        <li><h4>Animations in CSS</h4></li>
+        <h5>For example consider this example:</h5>
+         <h5>HTML:</h5>
+         <pre>
+            &lg;div id="boxes"&gt;&lg;/div&gt;
+        </pre>
+            <h5>CSS:</h5>
+            <pre>
+              #boxes 
+            {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                position: relative; /* so it can move */
+                animation: slide-left 2s infinite alternate;
+            }
+
+            @keyframes slide-left 
+            {
+                from 
+                {
+                    left: 0;
+                }
+                {
+                    left: 300px; 
+                }
+            }
+            </pre>
+
+            <h4>Output</h4>
+        <div id="boxes"></div>
+
+
+
+
+
+
+
+
+
+
+        
+        <li><h4>FlexBox</h4></li>
+        <li><h4>Grid</h4></li>
+
+
+    </ol>
+</div>
+
+</body>
+</html>

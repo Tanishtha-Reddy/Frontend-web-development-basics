@@ -1,0 +1,63 @@
+.ClassSelectors
+{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 50px;
+}
+.blue
+{
+    color: blue;
+  
+}
+
+.display
+{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 50px;
+
+}
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+.display1
+{
+    display: inline;
+}
+
+.display2
+{
+    display: inline-block;
+}
+
+.display3
+{
+    display: block;
+}
+
+#box
+{
+    border: 10px solid black;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+}
+
+ #boxes {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: relative; /* so it can move */
+      animation: slide-left 2s infinite alternate;
+    }
+
+    @keyframes slide-left {
+     from {
+    left: 0;
+  }
+  to {
+    left: 300px; 
+  }
+}
