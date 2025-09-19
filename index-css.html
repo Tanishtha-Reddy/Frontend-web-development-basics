@@ -70,7 +70,6 @@
     <li><h4>Adding Custom web fonts</h4></li>
     <li><h4>Animations in CSS</h4></li>
     <li><h4>FlexBox</h4></li>
-    <li><h4>Grid</h4></li>
 </ol>
 </div>
 <hr>
@@ -197,6 +196,7 @@
             <div id="box">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, maiores, corporis distinctio consequuntur error impedit nemo veniam sit placeat voluptas nam doloremque alias porro recusandae exercitationem consequatur tempore ipsum asperiores?
             </div>
+            
 
 
 
@@ -241,21 +241,61 @@
         <div id="boxes"></div>
 
 
-
-
-
-
-
-
-
-
         
         <li><h4>FlexBox</h4></li>
-        <li><h4>Grid</h4></li>
+        <h5>For example, consider this:</h5>
+        <div>
+        <h5>HTML:</h5>
+            <pre>
+                
+                &lg;div class="login_signup" &gt; 
+                    &lg;div id="login" &gt;
+                        &lg;button type="button" &gt;Login &lg;/button&gt;
+                    &lg;/div &gt;
+                     &lg;div id="signup" &gt;
+                        &lg;button type="button" &gt;SignUp &lg;/button&gt;
+                    &lg;/div &gt;   
 
+            </pre>
+            <h5>CSS:</h5>
+            <pre>
+                .login_signup
+                {
+                    border: 1px solid black;
+                    display:flex ;
+                    padding: 20px;
+                    flex-direction: row;
+                    margin: 50px;
+                    justify-content: space-between;]
 
+                }
+
+                #login
+                {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                #signup
+                {
+                    display: flex;
+                    justify-content: flex-start;
+                }            
+            </pre>
+            </div>
+
+       
+
+        <div class="login_signup">
+            <div  id="login">
+                <button type="button">Login</button>
+            </div>
+            <div id="signup">
+                <button type="button">Sign Up</button>
+            </div>
+        </div>
     </ol>
 </div>
-
+<hr>
 </body>
 </html>
