@@ -31,41 +31,62 @@
             </li>
 
         <li>
-            <h4 >How to link one page to other</h4>
+            <h4>How to add images</h4>
         </li>
 
         <li>
-            <h4>How to add images</h4>
+            <h4>Favicons</h4>
         </li>
-        
 
+        <li>
+            <h4>Tables</h4>
+        </li>
 
-        
+        <li>
+            <h4>Forms</h4>
+        </li>
+
+        <li>
+            <h4>Text Areas</h4>
+        </li>
+
+        <li>
+            <h4> Buttons</h4>
+        </li>
+
+        <li>
+            <h4>Drop-Down Menus</h4>
+        </li>
+
+        <li>
+            <h4>Embedding videos</h4>
+        </li>
+
+        <li>
+            <h4 >How to link one page to other</h4>
+        </li>
+
+      
+
+<hr>       
     
     </ol>
 
     <ol>
-        <li><h3>Linking one page to another:</h3>
-        <div>
-        
-            To link one page to another in html, we use the syntax/tag: 
-            &lt;!a href="(insert link here)"&gt;(Name of link) &lt;!/a&gt;
-        </div>
-        <div>
-            Note: To open a link in a new tab:
-            &lt;a href="(Link)"&gt; target="_blank"&gt;
-        </div>
-        </li>
 
         <li>
             <h3>Adding images:</h3>
             <div>
                 To add images, use syntax:
+                <pre>
                 &lg;img src="(Name of the image)".(image file type) width= "X" height="Y"&gt;
+                </pre>
             </div>
 
-            <pre>
+            <div>
                 To link an image to another page, use syntax:
+                <div>
+                <pre>
                 &lg;a href="(page link)"&gt;
                 &lg;img 
                     src="(image).jpg"
@@ -73,9 +94,167 @@
                     height="Y"
                     alt="Link" 
                     (alt tag shows the message it contains when the image does not load)
-            </pre>
+                </pre>
+                </div>
+            </div>            
         </li>
+
+        <li>
+            <h3>Favicons</h3>
+            <div>
+                <pre>
+                &lg; link rel="Shortcut icon" href="(Name).png" type="image".png &gt;
+                </pre>
+            </div>
+        </li>
+
+       
+        <li>
+            <h3>Tables</h3>
+            <pre>
+            &lg;table border="X" width="100%"&gt;
+            &lg;tr&gt;
+                &gt;td&gt; Cell1 &gt;/td&gt;
+                &gt;td&gt; Cell2 &gt;/td&gt;
+                &gt;/tr&gt;
+                    &gt;td&gt;Cell2&gt;/td&gt;
+                    &gt;td&gt;Cell2&gt;/td&gt;
+                &gt;/tr&gt;
+            &gt;/table&gt;
+            </pre>
+
+            <h3>Output</h3>
+            <table border="1" width="100%">
+            <tr>
+                <td> Cell1 </td>
+                <td> Cell2 </td>
+                </tr>
+                    <td>Cell2</td>
+                    <td>Cell2</td>
+                </tr>
+            </table>
+        </li>
+
+         <li>
+            <h3>Forms: This is how we send data to a server</h3>
+            <div>
+                <pre>
+                &lg; form 
+                method= "GET" action="somepage.html" &gt;
+
+                &lg; button type = "submit" &gt; Submit form &lg;/button &gt;
+
+                &lg; /form &gt;
+                </pre>
+            </div>
+
+            <div>
+                <h3>Output</h3>
+            <form 
+                method= "GET" action="home_2.html">
+
+                <button type = "submit"> Submit form </button>
+
+            </form>
+
+            </div>
+        </li>
+
+        <li>
+            <h3>Text Areas: Area where the user gives input</h3>
+            <div>
+                <pre>
+                &lg; form 
+                &lg; textarea cols="X" rows="Y" &gt; Text Here &lg; /textarea &gt;
+                &lg; /form &gt;
+                </pre>
+            </div>
+            <div>
+                <h3>Output</h3>
+                <form >
+                    <textarea name="Text" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+        </li>
+
+        <li>
+            <div>
+                <h3>Buttons</h3>
+                <pre>
+                    &lt;button type="button"&gt;(Name of button) &lt;!/button&gt;
+                </pre>
+            </div>
+
+            <div>
+                <h3>Output</h3>
+                <button type="button">Click Me</button>
+            </div>
+        </li>
+
+        <li>
+            <h3>Drop-Down Menus</h3>
+            <div>
+                <pre>
+                &lg; form 
+                &lg; select name="selected-option" &gt;
+                &lg; option value="V1" &gt; This is value 1 &lg; /option &gt;
+                &lg; option value="V2" &gt; This is value 2 &lg; /option &gt;
+                &lg; option value="V3" &gt; This is value 3 &lg; /option &gt;
+                &lg; option value="V4" &gt; This is value 4 &lg; /option &gt;
+                &lg; /select &gt;
+                &lg; /form &gt;
+                </pre>
+            </div>
+
+            <div>
+                <h3>Output</h3>
+                <form>
+                    <select name="selected-option" >
+                    <option value="V1">This is Value 1</option>
+                    <option value="V2">This is Value 2</option>
+                    <option value="V3">This is Value 3</option>
+                    <option value="V4">This is Value 4</option>
+                    </select>
+                </form>
+            </div>
+        </li>
+
+        <li>
+            <h3>Embedding Videos: To add videos from YouTube or elsewhere directly into your website</h3>
+            <div>
+                <pre>
+                    &lg; iframe width="X" height="Y" src="(link of the video) frameborder=Z" allowfullscreen &gt;
+                    &lg; /iframe &gt;
+                </pre>
+            </div>
+
+            <div>
+                <h3>Output</h3>
+                <iframe src="https://www.youtube.com/embed/HD13eq_Pmp8?si=psM8jhEypAmJg2BH" width="560" height="315" frameborder="0" allowfullscreen>Embed</iframe>
+            </div>
+        </li>
+
+        <li><h3>Linking one page to another:</h3>
+        <div>
+        
+            To link one page to another in html, we use the syntax/tag: 
+            &lt;a href="(insert link here)"&gt;(Name of link) &lt;!/a&gt;
+        </div>
+        <div>
+            Note: To open a link in a new tab:
+            <pre>
+            &lt;a href="(Link)"&gt; target="_blank"&gt;
+            </pre>
+        </div>
+        </li>
+
+        
+
+
+
+
     </ol>
+<hr>
 </body>
 
 <footer>
