@@ -5,9 +5,9 @@ I am starting with **HTML basics**, and will gradually add CSS, JavaScript, and 
 
 ---
 
-## 📂 Contents
+##  Contents
 
-### ✅ HTML Basics (`index.html`)
+###  HTML Basics (`index.html`)
 This file includes practice with the following elements:
 
 - **Block Elements**
@@ -35,7 +35,7 @@ This file includes practice with the following elements:
 
 ---
 
-## 🖼️ Outputs
+## Outputs
 
 Here are some example outputs from the HTML file:
 
@@ -44,7 +44,7 @@ Here are some example outputs from the HTML file:
 
 ---
 
-## 🎨 CSS Basics
+##  CSS Basics
 The CSS file (`css_basics.css`) demonstrates how to style and animate elements.
 
 ### Topics Covered
@@ -56,11 +56,20 @@ The CSS file (`css_basics.css`) demonstrates how to style and animate elements.
 - Animations in CSS
 - FlexBox
 
-###  🖼️ Outputs
+###   Outputs
 Here are some example outputs from the CSS file:
 
 ### Animation in CSS Example
 <img width="660" height="871" alt="image" src="https://github.com/user-attachments/assets/0f62a380-a2a7-48c2-a515-c026609abc77" />
 
+##  JS Basics
+The following JS practice projects demonstrate my journey in learning JS.
+
+### Projects done (All using HTML, CSS, and JS):
+- A simple Counter Program.
+
+
+###   Outputs
+Here are some example outputs from the JS Projects:
 
 
